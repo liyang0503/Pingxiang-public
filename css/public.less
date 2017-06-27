@@ -5,6 +5,16 @@ section {
       div.public {
          div.public-sec {
             padding: 30px 0;
+            div.publ-top {
+               text-align: center;
+               border-bottom: 4px solid @bj;
+               padding: 10px 0;
+               p {
+                  font-size: 16px;
+                  font-weight: bold;
+                  color: @bj;
+               }
+            }
             table {
                tbody {
                   tr {
@@ -16,10 +26,15 @@ section {
                         color: #333;
                         &:first-child {
                            font-weight: bold;
+                           width: 200px;
                         }
                      }
                   }
                }
+            }
+            div.s {
+               background: #f8f8f8;
+               padding: 30px 15px;
             }
             a.fh {
                display: block;

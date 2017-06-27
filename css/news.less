@@ -18,8 +18,10 @@ section {
                      margin-bottom: 5px;
                   }
                   p.p2 {
-                     text-align: right;
-                     color: #333;
+                     color: #888;
+                     span {
+                        float: right;
+                     }
                   }
                }
                div.news-s {
@@ -52,7 +54,8 @@ section {
                         white-space: nowrap;
                         text-overflow: ellipsis;
                         overflow: hidden;
-                        span {
+                        padding-right: 76px;
+                        span:first-child {
                            display: inline-block;
                            vertical-align: middle;
                            width: 18px;
@@ -68,6 +71,12 @@ section {
                            &.top {
                               background: #e60012;
                            }
+                        }
+                        span.t {
+                           position: absolute;
+                           right: 0;
+                           font-size: 12px;
+                           color: #999;
                         }
                      }
                   }

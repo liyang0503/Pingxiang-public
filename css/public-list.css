@@ -109,7 +109,7 @@ section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-t
   float: right;
 }
 section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s {
-  padding: 0 20px 20px;
+  padding: 5px 20px 20px;
 }
 section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s div.pub-r-top {
   padding: 15px 0;
@@ -140,6 +140,16 @@ section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s
 }
 section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s div.pub-r-top div.row div.d div.d1 .in3 {
   width: 90px;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s div.pub-r-top button {
+  border: none;
+  border-radius: 6px;
+  background: #0056b7;
+  width: 80px;
+  color: #fff;
+  display: block;
+  margin: 20px auto 5px;
+  padding: 3px 0;
 }
 section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s div.rr {
   height: 15px;
@@ -186,30 +196,193 @@ section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s
   font-weight: bold;
   color: #0056b7;
 }
-section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s div.pub-r-s div.page {
-  margin-bottom: 0;
-  margin-top: 25px;
-  text-align: center;
-  height: 35px;
+section div.container div.public div.public-list div.row div.pub-rt div.record {
+  padding: 5px 20px 20px;
 }
-section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s div.pub-r-s div.page .pagination > li > a,
-section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s div.pub-r-s div.page .pagination > li > span {
+section div.container div.public div.public-list div.row div.pub-rt div.record ul.rec-top {
+  text-align: right;
+  margin-bottom: 20px;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record ul.rec-top li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 3px 5px;
+  margin-left: 12px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  color: #666;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record ul.rec-top li.active,
+section div.container div.public div.public-list div.row div.pub-rt div.record ul.rec-top li:hover {
   border-color: #0056b7;
   color: #0056b7;
+  font-weight: bold;
 }
-section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s div.pub-r-s div.page .pagination > li > a:focus,
-section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s div.pub-r-s div.page .pagination > li > a:hover,
-section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s div.pub-r-s div.page .pagination > li > span:focus,
-section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s div.pub-r-s div.page .pagination > li > span:hover {
-  background-color: #0056b7;
-  color: #fff;
+section div.container div.public div.public-list div.row div.pub-rt div.record div.rec-sec {
+  display: none;
 }
-section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s div.pub-r-s div.page .pagination > .active > a,
-section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s div.pub-r-s div.page .pagination > .active > a:focus,
-section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s div.pub-r-s div.page .pagination > .active > a:hover,
-section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s div.pub-r-s div.page .pagination > .active > span,
-section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s div.pub-r-s div.page .pagination > .active > span:focus,
-section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s div.pub-r-s div.page .pagination > .active > span:hover {
-  background-color: #0056b7;
-  color: #fff;
+section div.container div.public div.public-list div.row div.pub-rt div.record div.rec-sec.active {
+  display: block;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.book {
+  padding-top: 10px;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.book ul {
+  background-image: url("../images/pxiang-shu-bj.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding: 10px 20px 24px;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.book ul li {
+  width: 20%;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.book ul li a {
+  display: block;
+  width: 92px;
+  height: 101px;
+  margin: auto;
+  background-image: url("../images/pxiang-shu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  position: relative;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.book ul li a span {
+  font-weight: bold;
+  color: #333;
+  width: 20px;
+  line-height: 14px;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.time table thead tr th {
+  border-color: #0056b7;
+  color: #0056b7;
+  font-size: 16px;
+  text-align: center;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.time table tbody tr td {
+  border-top: none;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.time table tbody tr td a {
+  display: block;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.time table tbody tr td.td3 a {
+  color: #0056b7;
+  text-align: right;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.time table tbody tr td.td4 {
+  width: 155px;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.time table tbody tr td.td4 a {
+  text-align: right;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.list div.list-top {
+  border-bottom: 1px solid #0056b7;
+  text-align: center;
+  padding: 10px 0 5px;
+  margin-bottom: 15px;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.list div.list-top p.title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0056b7;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.list div.list-top p.p1 {
+  color: #999;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.list table thead tr th {
+  border-bottom: none;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.list table thead tr th:last-child {
+  width: 180px;
+  text-align: center;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.list table tbody tr td {
+  border-top: none;
+  border-bottom: 1px solid #ddd;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.list table tbody tr td:last-child {
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  section {
+    background: #fff;
+  }
+  section div.container div.public div.public-list {
+    padding: 15px 0;
+  }
+  section div.container div.public div.public-list div.row div.pub-rt {
+    margin-left: 0;
+    width: 100%;
+    min-height: 100px;
+  }
+  section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-t {
+    padding: 0;
+  }
+  section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s {
+    padding: 5px 0 10px;
+  }
+  section div.container div.public div.public-list div.row div.pub-rt div.record {
+    padding: 5px 0 20px;
+  }
+  section div.container div.public div.public-list div.row div.pub-rt div.record div.book {
+    padding-top: 0;
+    margin-left: -4%;
+    margin-right: -4%;
+  }
+  section div.container div.public div.public-list div.row div.pub-rt div.record div.book ul {
+    padding: 10px 5px 24px;
+  }
+  section div.container div.public div.public-list div.row div.pub-rt div.record div.book ul li {
+    width: 33%;
+  }
+  section div.container div.public div.public-list div.row div.pub-rt div.record div.time div.time-list a {
+    display: block;
+    padding: 3px 0;
+    border-bottom: 1px dashed #ddd;
+  }
+  section div.container div.public div.public-list div.row div.pub-rt div.record div.time div.time-list a p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 5px;
+  }
+  section div.container div.public div.public-list div.row div.pub-rt div.record div.time div.time-list a div span.s1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 25px;
+    color: #ff6c00;
+  }
+  section div.container div.public div.public-list div.row div.pub-rt div.record div.time div.time-list a div span.s1.ss {
+    margin-left: 0;
+  }
+  section div.container div.public div.public-list div.row div.pub-rt div.record div.time div.time-list a div span.s2 {
+    float: right;
+    color: #888;
+  }
+  section div.container div.public div.public-list div.row div.pub-rt div.record div.list div.list-top {
+    padding-top: 0;
+  }
+  section div.container div.public div.public-list div.row div.pub-rt div.record div.list div.list-top p.p1 {
+    font-size: 1.2rem;
+  }
+  section div.container div.public div.public-list div.row div.pub-rt div.record div.list table thead tr th:last-child {
+    width: 100px;
+  }
+  section div.container div.public div.public-list div.pub-sj-list > ul li a {
+    display: block;
+    border-bottom: 1px dashed #ddd;
+    padding: 3px 0;
+  }
+  section div.container div.public div.public-list div.pub-sj-list > ul li a p {
+    margin-bottom: 5px;
+  }
+  section div.container div.public div.public-list div.pub-sj-list > ul li a div {
+    color: #999;
+  }
+  section div.container div.public div.public-list div.pub-sj-list > ul li a div span {
+    float: right;
+  }
 }

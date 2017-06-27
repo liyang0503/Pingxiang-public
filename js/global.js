@@ -8,15 +8,18 @@ $(function () {
       if ($('body').outerHeight() < wh) {
          $('body').css({paddingBottom: $('footer').outerHeight(), height: wh});
          $('section').css({minHeight: wh - $('footer').outerHeight() - $('header').outerHeight() - $('nav').outerHeight()});
-         $('footer').css({
-            position: 'absolute',
-            left: 0,
-            bottom: 0
-         });
+         if (w > 993) {
+            $('footer').css({
+               position: 'absolute',
+               left: 0,
+               bottom: 0
+            });
+         }
       }
+      setTimeout(top, 0);
    }
 
-   setTimeout(top, 200);
+   top();
 
    // 内页导航
    $('.info-top .a1').each(function (index) {
@@ -45,24 +48,20 @@ $(function () {
    });
 
    $('a').click(function () {
-      msg();
+      if ($(this).attr('href') == 'javascript:') {
+         msg();
+      }
    });
+
+//  手机二级导航
+   $('.s2-ico').click(function () {
+      $(this).next('.ls').slideToggle('fast');
+   });
+
 });
 
 //tab切换
 function tab(cli, sec) {
-   function se() {
-      $(sec).each(function () {
-         $(this).hide();
-         if ($(this).hasClass('active')) {
-            $(this).show();
-         }
-      });
-      setTimeout(se);
-   }
-
-   se();
-
    $(cli).each(function (index) {
       $(this).click(function () {
          $(sec).removeClass('active');

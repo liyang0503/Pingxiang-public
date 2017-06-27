@@ -16,8 +16,10 @@ section div.container div.news div.news-sec div.news-le div.news-top p.title {
   margin-bottom: 5px;
 }
 section div.container div.news div.news-sec div.news-le div.news-top p.p2 {
-  text-align: right;
-  color: #333;
+  color: #888;
+}
+section div.container div.news div.news-sec div.news-le div.news-top p.p2 span {
+  float: right;
 }
 section div.container div.news div.news-sec div.news-le div.news-s img {
   display: block;
@@ -49,8 +51,9 @@ section div.container div.news div.news-sec div.news-rt ul.news-ul li a {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  padding-right: 76px;
 }
-section div.container div.news div.news-sec div.news-rt ul.news-ul li a span {
+section div.container div.news div.news-sec div.news-rt ul.news-ul li a span:first-child {
   display: inline-block;
   vertical-align: middle;
   width: 18px;
@@ -64,6 +67,12 @@ section div.container div.news div.news-sec div.news-rt ul.news-ul li a span {
   font-style: italic;
   margin-right: 3px;
 }
-section div.container div.news div.news-sec div.news-rt ul.news-ul li a span.top {
+section div.container div.news div.news-sec div.news-rt ul.news-ul li a span:first-child.top {
   background: #e60012;
+}
+section div.container div.news div.news-sec div.news-rt ul.news-ul li a span.t {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  color: #999;
 }

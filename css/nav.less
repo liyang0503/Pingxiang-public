@@ -16,7 +16,7 @@ body {
    color: #000;
    position: relative;
    @media screen and (max-width: 768px) {
-      font: 1.2rem/1.6 "微软雅黑";
+      font: 1.4rem/1.6 "微软雅黑";
    }
    &::-webkit-scrollbar {
       height: 5px;
@@ -69,6 +69,27 @@ header, nav, section, footer {
    float: right;
 }
 
+//分页
+div.page {
+   margin-bottom: 0;
+   margin-top: 25px;
+   text-align: center;
+   height: 35px;
+   .pagination > li > a, .pagination > li > span {
+      border-color: @bj;
+      color: @bj;
+   }
+   .pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover {
+      background-color: @bj;
+      border-color: @bj;
+      color: #fff;
+   }
+   .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+      background-color: @bj;
+      color: #fff;
+   }
+}
+
 @media screen and (min-width: 1000px) {
    .container {
       width: 1000px;
@@ -80,7 +101,7 @@ header, nav, section, footer {
          ul {
             height: 45px;
             line-height: 45px;
-            padding: 0 50px;
+            padding: 0 5px;
             background: @bj;
             li {
                a {
@@ -143,20 +164,16 @@ header {
          right: 100px;
          width: 540px;
          ul {
-            li {
-               a {
-                  font-size: 12px;
-               }
-            }
             &.list1 {
-               padding-left: 40px;
+               text-align: center;
                li {
+                  display: inline-block;
+                  vertical-align: middle;
                   padding: 3px 0;
-                  &:hover {
-                     a {
-                        color: @bj;
-                        font-weight: bold;
-                     }
+                  cursor: pointer;
+                  &:hover, &.active {
+                     color: @bj;
+                     font-weight: bold;
                   }
                   i {
                      display: inline-block;
@@ -206,6 +223,12 @@ header {
                }
             }
          }
+         .list1-sec {
+            display: none;
+            &.active {
+               display: block;
+            }
+         }
       }
    }
    div.head2 {
@@ -242,31 +265,35 @@ div.info-top {
       background-image: url("../images/pxiang-info-ico-03.png");
       position: relative;
    }
-   div.search-box {
+}
+
+div.search-box {
+   float: right;
+   width: 255px;
+   height: 28px;
+   border: 1px solid @bj;
+   border-radius: 15px;
+   &.se2 {
+      width: auto;
+   }
+   input, button {
+      height: 26px;
+      border: none;
+   }
+   button {
       float: right;
-      width: 255px;
-      height: 28px;
-      border: 1px solid @bj;
-      border-radius: 15px;
-      input, button {
-         height: 26px;
-         border: none;
-      }
-      button {
-         float: right;
-         width: 90px;
-         background: @bj;
-         color: #fff;
-         border-top-right-radius: 15px;
-         border-bottom-right-radius: 15px;
-      }
-      input {
-         background: none;
-         border-top-left-radius: 15px;
-         border-bottom-left-radius: 15px;
-         font-size: 12px;
-         padding: 0 10px 0 12px;
-      }
+      width: 90px;
+      background: @bj;
+      color: #fff;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+   }
+   input {
+      background: none;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      font-size: 12px;
+      padding: 0 10px 0 12px;
    }
 }
 
@@ -448,8 +475,59 @@ div.info-top {
 
    //内页新闻导航
    div.info-top {
-      height: 48px;
-      padding-top: 15px;
+      margin-left: -4%;
+      margin-right: -4%;
+      background: @bj;
+      padding: 0 4%;
+      height: 40px;
+      line-height: 40px;
+      color: #fff;
+      position: relative;
+      span {
+         font-size: 1.4rem;
+      }
+      span.s2 {
+         float: right;
+         width: 30px;
+         height: 38px;
+         text-align: center;
+         line-height: 38px;
+         cursor: pointer;
+      }
+      ul.ls {
+         display: none;
+         position: absolute;
+         right: 10px;
+         top: 100%;
+         background: #fff;
+         z-index: 10;
+         border: 1px solid @bj;
+         border-radius: 5px;
+         line-height: 20px;
+         padding: 2px 0;
+         li {
+            a {
+               display: block;
+               padding: 5px 15px;
+            }
+         }
+      }
+   }
+
+   div.search-box {
+      float: none;
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+      button {
+         border-top-right-radius: 8px;
+         border-bottom-right-radius: 8px;
+      }
+      input {
+         border-top-left-radius: 10px;
+         border-bottom-left-radius: 10px;
+         width: 68%;
+      }
    }
 }
 
@@ -475,7 +553,7 @@ div.info-top {
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
             padding: 2px 12px;
-            width: 47%;
+            width: 46%;
          }
       }
    }

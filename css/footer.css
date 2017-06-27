@@ -85,6 +85,9 @@ footer div.foot.foot2 div.container ul li {
 footer div.foot.foot2 div.container ul li a {
   color: #fff;
 }
+footer div.foot.foot2 div.container ul li:last-child {
+  border: none;
+}
 footer div.foot.foot2 div.container > img {
   position: absolute;
   top: -30px;

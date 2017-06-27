@@ -117,7 +117,7 @@ section {
                      }
                   }
                   div.pub-rt-s {
-                     padding: 0 20px 20px;
+                     padding: 5px 20px 20px;
                      div.pub-r-top {
                         padding: 15px 0;
                         div.row {
@@ -149,6 +149,16 @@ section {
                                  }
                               }
                            }
+                        }
+                        button {
+                           border: none;
+                           border-radius: 6px;
+                           background: @bj;
+                           width: 80px;
+                           color: #fff;
+                           display: block;
+                           margin: 20px auto 5px;
+                           padding: 3px 0;
                         }
                      }
                      div.rr {
@@ -202,22 +212,255 @@ section {
                               }
                            }
                         }
-                        div.page {
-                           margin-bottom: 0;
-                           margin-top: 25px;
-                           text-align: center;
-                           height: 35px;
-                           .pagination > li > a, .pagination > li > span {
+
+                     }
+                  }
+
+                  //   信用档案
+                  div.record {
+                     padding: 5px 20px 20px;
+                     ul.rec-top {
+                        text-align: right;
+                        margin-bottom: 20px;
+                        li {
+                           display: inline-block;
+                           vertical-align: middle;
+                           padding: 3px 5px;
+                           margin-left: 12px;
+                           border-bottom: 2px solid transparent;
+                           cursor: pointer;
+                           color: #666;
+                           &.active, &:hover {
                               border-color: @bj;
                               color: @bj;
+                              font-weight: bold;
                            }
-                           .pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover {
-                              background-color: @bj;
-                              color: #fff;
+                        }
+                     }
+                     div.rec-sec {
+                        display: none;
+                        &.active {
+                           display: block;
+                        }
+                     }
+                     div.book {
+                        padding-top: 10px;
+                        ul {
+                           background-image: url("../images/pxiang-shu-bj.png");
+                           background-repeat: no-repeat;
+                           background-position: center bottom;
+                           padding: 10px 20px 24px;
+                           li {
+                              width: 20%;
+                              a {
+                                 display: block;
+                                 width: 92px;
+                                 height: 101px;
+                                 margin: auto;
+                                 background-image: url("../images/pxiang-shu.png");
+                                 background-repeat: no-repeat;
+                                 background-position: center;
+                                 text-align: center;
+                                 position: relative;
+                                 span {
+                                    font-weight: bold;
+                                    color: #333;
+                                    width: 20px;
+                                    line-height: 14px;
+                                    position: absolute;
+                                    top: 48%;
+                                    left: 50%;
+                                 }
+                              }
                            }
-                           .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
-                              background-color: @bj;
-                              color: #fff;
+                        }
+                     }
+                     div.time {
+                        table {
+                           thead {
+                              tr {
+                                 th {
+                                    border-color: @bj;
+                                    color: @bj;
+                                    font-size: 16px;
+                                    text-align: center;
+                                 }
+                              }
+                           }
+                           tbody {
+                              tr {
+                                 td {
+                                    border-top: none;
+                                    a {
+                                       display: block;
+                                    }
+                                    &.td3 {
+                                       a {
+                                          color: @bj;
+                                          text-align: right;
+                                       }
+                                    }
+                                    &.td4 {
+                                       width: 155px;
+                                       a {
+                                          text-align: right;
+                                       }
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                     div.list {
+                        div.list-top {
+                           border-bottom: 1px solid @bj;
+                           text-align: center;
+                           padding: 10px 0 5px;
+                           margin-bottom: 15px;
+                           p.title {
+                              font-size: 16px;
+                              font-weight: bold;
+                              color: @bj;
+                           }
+                           p.p1 {
+                              color: #999;
+                           }
+                        }
+                        table {
+                           thead {
+                              tr {
+                                 th {
+                                    border-bottom: none;
+                                    &:last-child {
+                                       width: 180px;
+                                       text-align: center;
+                                    }
+                                 }
+                              }
+                           }
+                           tbody {
+                              tr {
+                                 td {
+                                    border-top: none;
+                                    border-bottom: 1px solid #ddd;
+                                    &:last-child {
+                                       text-align: center;
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 767px) {
+   section {
+      background: #fff;
+      div.container {
+         div.public {
+            div.public-list {
+               padding: 15px 0;
+               div.row {
+                  div.pub-rt {
+                     margin-left: 0;
+                     width: 100%;
+                     min-height: 100px;
+                     div.pub-rt-t {
+                        padding: 0;
+                     }
+                     div.pub-rt-s {
+                        padding: 5px 0 10px;
+                     }
+
+                     //   信用档案
+                     div.record {
+                        padding: 5px 0 20px;
+                        div.book {
+                           padding-top: 0;
+                           margin-left: -4%;
+                           margin-right: -4%;
+                           ul {
+                              padding: 10px 5px 24px;
+                              li {
+                                 width: 33%;
+                              }
+                           }
+                        }
+                        div.time {
+                           div.time-list {
+                              a {
+                                 display: block;
+                                 padding: 3px 0;
+                                 border-bottom: 1px dashed #ddd;
+                                 p {
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                    margin-bottom: 5px;
+                                 }
+                                 div {
+                                    span.s1 {
+                                       display: inline-block;
+                                       vertical-align: middle;
+                                       margin-left: 25px;
+                                       color: #ff6c00;
+                                       &.ss {
+                                          margin-left: 0;
+                                       }
+                                    }
+                                    span.s2 {
+                                       float: right;
+                                       color: #888;
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                        div.list {
+                           div.list-top {
+                              padding-top: 0;
+                              p.p1 {
+                                 font-size: 1.2rem;
+                              }
+                           }
+                           table {
+                              thead {
+                                 tr {
+                                    th {
+                                       &:last-child {
+                                          width: 100px;
+                                       }
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+
+               //手机信用双公示列表
+               div.pub-sj-list {
+                  > ul {
+                     li {
+                        a {
+                           display: block;
+                           border-bottom: 1px dashed #ddd;
+                           padding: 3px 0;
+                           p {
+                              margin-bottom: 5px;
+                           }
+                           div {
+                              color: #999;
+                              span {
+                                 float: right;
+                              }
                            }
                         }
                      }
