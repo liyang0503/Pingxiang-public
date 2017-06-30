@@ -43,11 +43,6 @@ $(function () {
          $(rt_top).find('div').css({width: $(rt_top).outerWidth() - $(rt_top).find('span').outerWidth() - 8});
       });
    }
-
-   $('.list1-li').click(function () {
-      var url = $(this).attr('data-url');
-      $('#search').attr('action', url);
-   });
 });
 
 jQuery.fn.size = function () {
