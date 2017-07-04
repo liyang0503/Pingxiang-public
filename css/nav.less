@@ -90,59 +90,17 @@ div.page {
    }
 }
 
-@media screen and (min-width: 1000px) {
-   .container {
-      width: 1000px;
-   }
-
-   //   nav
-   nav {
-      background: @bj;
-      div.container {
-         ul {
-            height: 45px;
-            line-height: 45px;
-            padding: 0 5px;
-            li {
-               a {
-                  padding: 0 17px;
-                  display: block;
-                  text-align: center;
-                  color: #fff;
-                  font-weight: bold;
-               }
-               &.active {
-                  background: #fff;
-                  a {
-                     color: @bj;
-                  }
-               }
-               &:hover {
-                  background: @bj*1.8;
-               }
-            }
-         }
-      }
-      &.nav-info {
-         background: @bj;
-      }
-   }
-}
-
 //   header
 header {
    div.head-pc {
       padding: 10px 0;
-      a.logo {
-
-      }
-      ul.h_top {
-         float: right;
-         li {
-            margin: 5px 10px;
-            a {
-               font-size: 12px;
-            }
+   }
+   ul.h_top {
+      float: right;
+      li {
+         margin: 5px 10px;
+         a {
+            font-size: 12px;
          }
       }
    }
@@ -157,18 +115,19 @@ header {
    }
 }
 
+img.ban {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+}
+
 //首页banner
 div.banners {
    height: 407px;
    position: relative;
-   img.ban {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-   }
    div.container {
       div.banner-top {
          padding: 30px 15px;
@@ -235,6 +194,9 @@ div.banners {
                   font-size: 14px;
                   span {
                      font-size: 16px;
+                     position: relative;
+                     top: 3px;
+                     left: 3px;
                   }
                }
             }
@@ -267,6 +229,7 @@ div.banners {
                         img {
                            display: block;
                            width: 100%;
+                           height: 230px;
                         }
                         div.text {
                            position: absolute;
@@ -301,7 +264,7 @@ div.banners {
             cursor: pointer;
             width: 40px;
             height: 40px;
-            line-height: 40px;
+            line-height: 42px;
             border-radius: 3px;
             text-align: center;
             font-size: 20px;
@@ -314,6 +277,13 @@ div.banners {
             right: -48px;
          }
       }
+   }
+}
+
+.list2-sec {
+   display: none;
+   &.active {
+      display: block;
    }
 }
 
@@ -372,53 +342,22 @@ div.search-box {
    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 999px) {
-   //   header
-   header {
-      div.head-pc {
-         height: 184px;
-         background-size: 32%;
-         div.banner {
-         }
-         a.logo {
-            top: 45px;
-            left: 50px;
-            img {
-               width: 120px;
-            }
-         }
-         div.search {
-            top: 50px;
-            right: 30px;
-            width: 420px;
-            ul {
-               &.list1 {
-                  padding-left: 10px;
-                  li {
-                     padding: 3px 0;
-                  }
-               }
-            }
-            div.search-box {
-               input {
-                  width: 320px;
-               }
-            }
-         }
-      }
+@media screen and (min-width: 1000px) {
+   .container {
+      width: 1000px;
    }
 
    //   nav
    nav {
+      background: @bj;
       div.container {
          ul {
             height: 45px;
             line-height: 45px;
-            padding: 0 20px;
-            background: @bj;
+            padding: 0 5px;
             li {
                a {
-                  padding: 0 10px;
+                  padding: 0 17px;
                   display: block;
                   text-align: center;
                   color: #fff;
@@ -436,17 +375,16 @@ div.search-box {
             }
          }
       }
+      &.nav-info {
+         background: @bj;
+      }
    }
-
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 993px) {
    //   header
    header {
       padding: 10px 0;
-      div.head2 {
-         padding: 0;
-      }
    }
 
    //   nav
@@ -458,6 +396,8 @@ div.search-box {
          ul {
             height: 35px;
             line-height: 35px;
+            position: relative;
+            width: 882px;
             li {
                a {
                   padding: 0 12px;
@@ -480,10 +420,11 @@ div.search-box {
    //   search
    div.search {
       height: 165px;
-      background-image: url("../images/pxiang-head_bj.jpg");
-      background-repeat: no-repeat;
-      background-position: right center;
+      //background-image: url("../images/pxiang-head_bj.jpg");
+      //background-repeat: no-repeat;
+      //background-position: right center;
       padding: 35px 10px 0;
+      position: relative;
       ul {
          display: none;
          background: rgba(255, 255, 255, 0.9);
@@ -606,6 +547,23 @@ div.search-box {
    }
 }
 
+@media screen and (min-width: 768px) and (max-width: 993px) {
+   //   header
+   header {
+      padding: 0;
+   }
+
+   //   nav
+   nav {
+      div.container {
+         ul {
+            height: 45px;
+            line-height: 45px;
+         }
+      }
+   }
+}
+
 @media screen and (max-width: 410px) {
    //   search
    div.search {
@@ -614,7 +572,7 @@ div.search-box {
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
             padding: 2px 12px;
-            width: 52%;
+            width: 51%;
          }
       }
    }
@@ -628,7 +586,7 @@ div.search-box {
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
             padding: 2px 12px;
-            width: 46%;
+            width: 45%;
          }
       }
    }
