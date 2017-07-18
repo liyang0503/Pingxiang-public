@@ -4,18 +4,31 @@
  */
 
 $(function () {
+//   手机首页轮播
+   /*$('.banner').backstretch([
+    "images/pxiang-banner.jpg",
+    "images/pxiang-banner-1.png",
+    "images/pxiang-banner-2.png"
+    ], {
+    fade: 900,
+    duration: 4000
+    });*/
+
 //   PC首页轮播
-   var img = $('.a_img');
-   var li = $('.car_li');
-   for (var i = 0; i < img.length; i++) {
-      $(li[i]).attr('data-slide-to', i);
-   }
-   $('.ban-li').hover(function () {
-      $(this).css({borderTopColor: "#4f90d7"});
-      $(this).next().css({borderTopColor: "#4f90d7"});
+   $(".le_se").slide({
+      titCell: "",
+      mainCell: ".bd ul",
+      autoPage: true,
+      effect: "left",
+      autoPlay: true,
+      scroll: 1,
+      vis: 2,
+      trigger: "click"
+   });
+   $('.ban-text').hover(function () {
+      $(this).children('.text').css({bottom: 0, opacity: 1});
    }, function () {
-      $(this).css({borderTopColor: "#f0f0f0"});
-      $(this).next().css({borderTopColor: "#f0f0f0"});
+      $(this).children('.text').css({bottom: "-100%", opacity: 0});
    });
 
 //   tab切换调用
@@ -23,7 +36,6 @@ $(function () {
    tab('.rt-li2', '.rt-ul2');
    tab('.list1-li', '.list1-sec');
    tab('.list2-li', '.list2-sec');
-   tab('.tit-li', '.ul2-sec');
 
 //   右侧切换部分的宽度（手机）
    if (w < 767) {

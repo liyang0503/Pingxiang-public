@@ -1,37 +1,45 @@
 footer div.foot-top {
   padding: 10px 0 20px;
+  background-image: url("../images/pxiang-foot-bj1.png");
+  background-repeat: repeat;
+  background-color: #f7f7f7;
 }
-footer div.foot-top div.container div.fot-ul2 {
-  margin-bottom: 15px;
+footer div.foot-top div.container div.fot-ul div {
+  text-align: center;
 }
-footer div.foot-top div.container div.fot-ul2 ul.tit li {
-  font-size: 16px;
-  padding: 5px 30px;
-  margin-right: 10px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+footer div.foot-top div.container div.fot-ul div p {
+  font-size: 18px;
+  color: #0056b7;
   font-weight: bold;
-  cursor: pointer;
 }
-footer div.foot-top div.container div.fot-ul2 ul.tit li:hover,
-footer div.foot-top div.container div.fot-ul2 ul.tit li.active {
+footer div.foot-top div.container div.fot-ul div ul {
+  display: inline-block;
+  text-align: left;
+  height: 200px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+footer div.foot-top div.container div.fot-ul div ul::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background-color: #ddd;
+}
+footer div.foot-top div.container div.fot-ul div ul::-webkit-scrollbar-thumb {
+  background-color: #008aff;
+  border-radius: 2px;
+}
+footer div.foot-top div.container div.fot-ul div ul li a {
+  white-space: nowrap;
+}
+footer div.foot-top div.container div.fot-ul div ul li a i {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
   background: #0056b7;
-  color: #fff;
-}
-footer div.foot-top div.container div.fot-ul2 div.ul2-sec {
-  padding: 15px;
-  border: 1px solid #333;
-  display: none;
-}
-footer div.foot-top div.container div.fot-ul2 div.ul2-sec.active {
-  display: block;
-}
-footer div.foot-top div.container div.fot-ul2 div.ul2-sec ul li {
-  width: 20%;
-}
-footer div.foot-top div.container div.fot-ul2 div.ul2-sec ul li a {
-  display: block;
-  padding: 2px 5px;
+  border-radius: 50%;
+  margin-right: 8px;
+  position: relative;
+  top: -2px;
 }
 footer div.foot-top div.container div.fot-img div a {
   display: block;
@@ -111,13 +119,5 @@ footer div.foot.foot2 div.container p a {
   }
   footer div.foot div.container p a {
     color: #fff;
-  }
-}
-@media screen and (max-width: 767px) {
-  footer div.foot-top {
-    padding: 5px 0;
-  }
-  footer div.foot-top div.container div.fot-img div a {
-    padding: 5px 10px;
   }
 }
