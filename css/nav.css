@@ -98,7 +98,7 @@ header {
   background-size: cover;
 }
 header div.head-pc {
-  padding: 10px 0;
+  padding: 5px 0;
 }
 header ul.h_top {
   float: right;
@@ -346,10 +346,11 @@ div.search-box input {
   nav div.container ul {
     height: 45px;
     line-height: 45px;
-    padding: 0 4px;
+    padding-left: 229px;
   }
   nav div.container ul li a {
-    padding: 0 17px;
+    font-size: 12px;
+    padding: 0 11px;
     display: block;
     text-align: center;
     color: #fff;
@@ -370,6 +371,13 @@ div.search-box input {
   header {
     box-shadow: 0 0 20px #888;
     margin-bottom: 10px;
+  }
+  header .head-pc {
+    position: relative;
+  }
+  header .head-pc a.logo {
+    position: absolute;
+    top: 15px;
   }
   div.index-banner {
     height: 515px;
@@ -501,42 +509,112 @@ div.search-box input {
     background: #fff;
     border: 2px solid #4f90d7;
     z-index: 30;
-    padding: 0 15px;
+    padding: 8px 15px;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub ul.new-list li a i {
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub div.tit {
+    border-bottom: 1px solid #0056b7;
+    margin-bottom: 15px;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub div.tit span {
+    border-bottom: 3px solid #0056b7;
+    font-size: 16px;
+    position: relative;
+    top: 1px;
+    padding: 3px;
+    color: #0056b7;
   }
   div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub1 div.sub1-top {
-    padding: 15px 70px;
-    border-bottom: 2px solid #0056b7;
+    margin-bottom: 10px;
   }
-  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub1 div.sub1-top div.media div.media-left a {
-    display: block;
-  }
-  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub1 div.sub1-top div.media div.media-left a img {
-    display: block;
-    width: 190px;
-    height: 115px;
-  }
-  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub1 div.sub1-top div.media div.media-body a {
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub1 div.sub1-top a {
     font-size: 16px;
-    color: #0056b7;
     font-weight: bold;
-    line-height: 100%;
+    color: #0056b7;
     display: block;
+    text-align: center;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub1 div.sub1-top p {
+    font-size: 12px;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub1 div.sub1-top p.p1 {
+    margin: 5px 0;
+    line-height: 25px;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub1 div.sub1-sec div.sub-s-t {
+    border-bottom: 2px solid #0056b7;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub1 div.sub1-sec div.sub-s-t a.more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #666;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub1 div.sub1-sec div.sub-s-t ul li {
+    margin-right: 5px;
+    padding: 3px 12px;
+    cursor: pointer;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub1 div.sub1-sec div.sub-s-t ul li:hover,
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub1 div.sub1-sec div.sub-s-t ul li.active {
+    background: #0056b7;
+    color: #fff;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub1 div.sub1-sec ul.new-list li {
+    padding: 0 10px;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub2 > div {
+    width: 336px;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub2 > div table {
+    display: table;
+    width: 100%;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub2 > div table thead tr th {
+    color: #0056b7;
+    padding: 3px 0;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub2 > div table tbody tr td {
+    padding: 3px 0;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub2 > div table tbody tr td a {
+    display: block;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub2 > div table tbody tr td:first-child a {
+    width: 235px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub3 {
+    padding: 12px;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub3 ul.new-list li {
+    padding: 2px 0;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub3 div.sub3-le {
+    width: 348px;
+  }
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub3 div.sub3-le a.t {
+    display: block;
     margin-bottom: 10px;
   }
-  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub1 div.sub1-top div.media div.media-body p {
-    font-size: 12px;
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub3 div.sub3-le a.t img {
+    width: 100%;
   }
-  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub1 div.sub1-top div.media div.media-body p.p1 {
-    margin: 5px 0;
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub3 div.sub3-rt {
+    width: 370px;
+    padding-left: 12px;
+    border-left: 1px solid #ddd;
   }
-  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub1 div.sub1-top div.media div.media-body p.p2 {
-    color: #666;
-  }
-  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub1 div.sub1-top div.media div.media-body p.p2 span {
-    float: right;
+  div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li div.sub.sub3 div.sub3-rt div.tit {
+    margin-bottom: 10px;
   }
   div.index-banner div.container div.index-banner-sec div.banner-sec-le ul.ban-uls li.ban-li:hover {
     border-color: #4f90d7;

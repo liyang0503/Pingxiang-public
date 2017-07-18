@@ -1,20 +1,13 @@
-section div.container div.index {
-  padding: 20px 0;
-}
-section div.container div.index a.gd {
-  color: #999;
-  line-height: 28px;
-}
-section div.container div.index ul.new-list li {
+ul.new-list li {
   line-height: 30px;
 }
-section div.container div.index ul.new-list li a {
+ul.new-list li a {
   display: block;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-section div.container div.index ul.new-list li a i.ii {
+ul.new-list li a i.ii {
   display: inline-block;
   vertical-align: middle;
   width: 5px;
@@ -22,36 +15,36 @@ section div.container div.index ul.new-list li a i.ii {
   background: #0056b7;
   border-radius: 50%;
 }
-section div.container div.index ul.new-list.rt-ul {
+ul.new-list.rt-ul {
   display: none;
 }
-section div.container div.index ul.new-list.rt-ul.active {
+ul.new-list.rt-ul.active {
   display: block;
 }
-section div.container div.index ul.new-list.rt-ul2 {
+ul.new-list.rt-ul2 {
   display: none;
 }
-section div.container div.index ul.new-list.rt-ul2.active {
+ul.new-list.rt-ul2.active {
   display: block;
 }
-section div.container div.index ul.time li a {
+ul.time li a {
   position: relative;
   padding-right: 76px;
 }
-section div.container div.index ul.time li a span {
+ul.time li a span {
   font-size: 12px;
   color: #999;
   position: absolute;
   right: 0;
   top: 0;
 }
-section div.container div.index ul.time li a span.s1 {
+ul.time li a span.s1 {
   position: relative;
   color: #333;
   font-size: 14px;
   padding-right: 3px;
 }
-section div.container div.index ul.time li a span.s2 {
+ul.time li a span.s2 {
   background: #ff7c86;
   border-radius: 50%;
   color: #fff;
@@ -65,14 +58,21 @@ section div.container div.index ul.time li a span.s2 {
   margin-right: 5px;
   font-weight: bold;
 }
-section div.container div.index ul.time li a span.s2.top {
+ul.time li a span.s2.top {
   background: #e60012;
 }
-section div.container div.index ul.time li a img.img2 {
+ul.time li a img.img2 {
   position: absolute;
   right: 0;
   top: 10px;
   width: 12px;
+}
+section div.container div.index {
+  padding: 20px 0;
+}
+section div.container div.index a.gd {
+  color: #999;
+  line-height: 28px;
 }
 section div.container div.index ul.new-list2 li {
   line-height: 30px;
